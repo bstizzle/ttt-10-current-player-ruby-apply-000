@@ -22,4 +22,5 @@ def current_player(board)
   elsif turn_count(board).odd?
     current_player = "O"
   end
+  return current_player
 end
