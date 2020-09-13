@@ -17,10 +17,13 @@ def turn_count(board)
 end
 
 def current_player(board)
+  #even count means player X
   if turn_count(board).even?
     current_player = "X"
+  #odd count means player Y 
   elsif turn_count(board).odd?
     current_player = "O"
   end
+  #return the player string 
   return current_player
 end
